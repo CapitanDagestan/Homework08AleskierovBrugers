@@ -1,17 +1,17 @@
+import java.util.Random;
+
 public class BurgersMain {
 
     public static void main(String[] args){
-        Burger usual = new Burger();
-        Burger diet = new Burger();
-        Burger doble = new Burger();
-        Burger yours = new Burger();
+        Random random = new Random();
+        String[] bun = {"булочка з кунжутом", "м'яка пшенична булочка", "картопляна булочка", "чіабатта"};
+        String[] meat = {"котлета із яловичини", "котлета із баранини", "котлета зі свинини"};
+        String[] cheese = {"плавлений сир", "нарізаний сир"};
+        String[] greenery = {"помідор", "огірок", "огірки й цибуля", "помідор й цибуля", "помідор, огірки й цибуля"};
+        String[] mayo = {"майонез", "майонез й кетчуп", "майонез й гірчиця", "майонез, кетчуп й гірчиця"};
 
-        usual.burger(3);
-        System.out.println();
-        diet.burgerDiet(1);
-        System.out.println();
-        doble.burgerDouble(4);
-        System.out.println();
-        yours.burgerCreate();
+        Burger usual = new Burger(bun[random.nextInt(bun.length)], meat[random.nextInt(meat.length)], cheese[random.nextInt(cheese.length)], greenery[random.nextInt(greenery.length)], mayo[random.nextInt(mayo.length)]);
+        Burger diet = new Burger(bun[random.nextInt(bun.length)], meat[random.nextInt(meat.length)], cheese[random.nextInt(cheese.length)], greenery[random.nextInt(greenery.length)]);
+        Burger king = new Burger(bun[random.nextInt(bun.length)], meat[random.nextInt(meat.length)], cheese[random.nextInt(cheese.length)], greenery[random.nextInt(greenery.length)], mayo[random.nextInt(mayo.length)], true);
     }
 }
