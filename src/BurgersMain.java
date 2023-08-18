@@ -10,6 +10,8 @@ public class BurgersMain {
         String[] greenery = {"помідор", "огірок", "огірки й цибуля", "помідор й цибуля", "помідор, огірки й цибуля"};
         String[] mayo = {"майонез", "майонез й кетчуп", "майонез й гірчиця", "майонез, кетчуп й гірчиця"};
 
+        System.out.println("Склад бургерів дається знизу нагору");
+
         Burger usual = new Burger(bun[random.nextInt(bun.length)], meat[random.nextInt(meat.length)], cheese[random.nextInt(cheese.length)], greenery[random.nextInt(greenery.length)], mayo[random.nextInt(mayo.length)]);
         Burger diet = new Burger(bun[random.nextInt(bun.length)], meat[random.nextInt(meat.length)], cheese[random.nextInt(cheese.length)], greenery[random.nextInt(greenery.length)]);
         Burger king = new Burger(bun[random.nextInt(bun.length)], meat[random.nextInt(meat.length)], cheese[random.nextInt(cheese.length)], greenery[random.nextInt(greenery.length)], mayo[random.nextInt(mayo.length)], true);

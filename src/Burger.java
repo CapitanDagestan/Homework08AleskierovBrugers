@@ -15,12 +15,12 @@ public class Burger {
         this.mayo = mayo;
         System.out.println("Склад бургеру: " +
                 bun +
-                ", " + mayo +
-                ", " + meat +
-                ", " + cheese +
-                ", " + greenery +
-                ", " + mayo +
-                ", " + bun
+                "; " + mayo +
+                "; " + meat +
+                "; " + cheese +
+                "; " + greenery +
+                "; " + mayo +
+                "; " + bun
         );
     }
 
@@ -31,10 +31,10 @@ public class Burger {
         this.greenery = greenery;
         System.out.println("Склад дієтичного бургеру: " +
                 bun +
-                ", " + meat +
-                ", " + cheese +
-                ", " + greenery +
-                ", " + bun
+                "; " + meat +
+                "; " + cheese +
+                "; " + greenery +
+                "; " + bun
         );
     }
 
@@ -49,13 +49,13 @@ public class Burger {
         this.mayo = mayo;
         System.out.println("Склад королівського бургеру: " +
                 bun +
-                ", " + mayo +
-                ", " + meat +
-                ", " + cheese +
-                ", " + meat +
-                ", " + greenery +
-                ", " + mayo +
-                ", " + bun
+                "; " + mayo +
+                "; " + meat +
+                "; " + cheese +
+                "; " + meat +
+                "; " + greenery +
+                "; " + mayo +
+                "; " + bun
         );
     }
 }
