@@ -15,11 +15,13 @@ public class Burger {
         this.mayo = mayo;
         System.out.println("Склад бургеру: " +
                 bun +
+                ", " + mayo +
                 ", " + meat +
                 ", " + cheese +
                 ", " + greenery +
-                ", " + mayo
-                );
+                ", " + mayo +
+                ", " + bun
+        );
     }
 
     public Burger(String bun, String meat, String cheese, String greenery) {
@@ -31,7 +33,8 @@ public class Burger {
                 bun +
                 ", " + meat +
                 ", " + cheese +
-                ", " + greenery
+                ", " + greenery +
+                ", " + bun
         );
     }
 
@@ -46,11 +49,13 @@ public class Burger {
         this.mayo = mayo;
         System.out.println("Склад королівського бургеру: " +
                 bun +
+                ", " + mayo +
                 ", " + meat +
                 ", " + cheese +
                 ", " + meat +
                 ", " + greenery +
-                ", " + mayo
+                ", " + mayo +
+                ", " + bun
         );
     }
 }

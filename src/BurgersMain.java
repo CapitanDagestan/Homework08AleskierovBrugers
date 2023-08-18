@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class BurgersMain {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Random random = new Random();
         String[] bun = {"булочка з кунжутом", "м'яка пшенична булочка", "картопляна булочка", "чіабатта"};
         String[] meat = {"котлета із яловичини", "котлета із баранини", "котлета зі свинини"};
